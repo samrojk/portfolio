@@ -20,7 +20,7 @@ const theme = () => {
   }, [darkMode]);
 
   return (
-    <button
+    <button title="Mode Switch"
     className="cursor-pointer"
       onClick={() => setDarkMode((prev) => !prev)}
     >
