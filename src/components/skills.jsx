@@ -17,10 +17,12 @@ import {
   SiAppwrite,
   SiOpenai,
   SiNotion,
+  SiMongodb,
 } from "react-icons/si";
 
 const skills = () => {
-  const [activeTab, setActiveTab] = useState("tab1");
+  const [activeTab, setActiveTab] = useState("tab1"); // switch tabs 
+
   return (
     <div className="text-primary-dark dark:text-primary mx-[42px] justify-items-center mt-[86px]">
       {/* Heading */}
