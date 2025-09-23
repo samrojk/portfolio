@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import LogoD from "../assets/dlogo.png";
-import LogoW from "../assets/wlogo.png";
+import LogoD from "../assets/dlogo.webp";
+import LogoW from "../assets/wlogo.webp";
 
 const theme = () => {
   const [darkMode, setDarkMode] = useState(
