@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../assets/hero_img.jpeg";
+import HeroImg from "../assets/hero_img.webp";
 import { FaCircleCheck } from "react-icons/fa6";
 
 const hero = () => {
