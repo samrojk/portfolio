@@ -12,6 +12,7 @@ import {
   SiPostgresql,
   SiGit,
   SiNetlify,
+  SiVercel,
   SiReactrouter,
   SiFirebase,
   SiAppwrite,
@@ -21,20 +22,22 @@ import {
 } from "react-icons/si";
 
 const skills = () => {
-  const [activeTab, setActiveTab] = useState("tab1"); // switch tabs 
+  const [activeTab, setActiveTab] = useState("tab1"); // switch tabs
 
   return (
-    <div className="text-primary-dark dark:text-primary mx-[42px] justify-items-center mt-[86px]">
+    <div className="text-primary-dark dark:text-primary mx-[24px] md:mx-[42px] justify-items-center mt-[86px]">
       {/* Heading */}
       <div>
-        <h1 className="text-[42px] font-semibold tracking-wide">Skills</h1>
+        <h1 className="text-[34px] md:text-[42px] font-semibold tracking-wide">
+          Skills
+        </h1>
       </div>
 
       {/* Tab Buttons */}
-      <div className="flex gap-[46px] mt-[28px]">
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-[16px] md:gap-[36px] mt-[24px] md:mt-[28px]">
         <button
           onClick={() => setActiveTab("tab1")}
-          className={`flex py-2 px-4.5 text-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
+          className={`flex py-2 px-4.5 text-center justify-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
             activeTab === "tab1"
               ? "bg-primary-dark text-primary border-primary-dark font-medium dark:text-primary-dark dark:bg-primary dark:border-primary"
               : "text-primary-dark/40 dark:text-primary/40"
@@ -45,7 +48,7 @@ const skills = () => {
 
         <button
           onClick={() => setActiveTab("tab2")}
-          className={`flex py-2 px-4.5 text-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
+          className={`flex py-2 px-4.5 text-center justify-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
             activeTab === "tab2"
               ? "bg-primary-dark text-primary border-primary-dark font-medium dark:text-primary-dark dark:bg-primary dark:border-primary"
               : "text-primary-dark/40 dark:text-primary/40"
@@ -56,7 +59,7 @@ const skills = () => {
 
         <button
           onClick={() => setActiveTab("tab3")}
-          className={`flex py-2 px-4.5 text-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
+          className={`flex py-2 px-4.5 text-center justify-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
             activeTab === "tab3"
               ? "bg-primary-dark text-primary border-primary-dark font-medium dark:text-primary-dark dark:bg-primary dark:border-primary"
               : "text-primary-dark/40 dark:text-primary/40"
@@ -67,7 +70,7 @@ const skills = () => {
 
         <button
           onClick={() => setActiveTab("tab4")}
-          className={`flex py-2 px-4.5 text-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
+          className={`flex py-2 px-4.5 text-center justify-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
             activeTab === "tab4"
               ? "bg-primary-dark text-primary border-primary-dark font-medium dark:text-primary-dark dark:bg-primary dark:border-primary"
               : "text-primary-dark/40 dark:text-primary/40"
@@ -78,7 +81,7 @@ const skills = () => {
 
         <button
           onClick={() => setActiveTab("tab5")}
-          className={`flex py-2 px-4.5 text-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
+          className={`flex py-2 px-4.5 text-center justify-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
             activeTab === "tab5"
               ? "bg-primary-dark text-primary border-primary-dark font-medium dark:text-primary-dark dark:bg-primary dark:border-primary"
               : "text-primary-dark/40 dark:text-primary/40"
@@ -89,10 +92,10 @@ const skills = () => {
       </div>
 
       {/* Tab Content */}
-      <div className="mt-[28px] p-4">
+      <div className="mt-[24px] md:mt-[28px] p-4">
         {/* Tab-1 */}
         {activeTab === "tab1" && (
-          <div className="grid grid-cols-4 gap-[16px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-[16px]">
             <span className="flex flex-row items-center gap-[14px] text-[16px] font-medium border-2 border-primary-dark/20 hover:border-green-500/80 dark:border-primary/20 dark:hover:border-red-500/80 shadow-xl shadow-primary-dark/0 dark:hover:shadow-red-500/10 px-4 py-[16px] rounded-xl w-[240px] bg-primary-dark/2 dark:bg-primary/2.5 transition-colors duration-300 dark:hover:text-red-100 text-primary-dark/80 dark:text-primary hover:shadow-green-500/10 hover:text-green-800">
               <FaReact size={28} />
               React.js
@@ -122,7 +125,7 @@ const skills = () => {
 
         {/* Tab-2 */}
         {activeTab === "tab2" && (
-          <div className="grid grid-cols-4 gap-[16px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-[16px]">
             <span className="flex flex-row items-center gap-[14px] text-[16px] font-medium border-2 border-primary-dark/20 hover:border-green-500/80 dark:border-primary/20 dark:hover:border-red-500/80 shadow-xl shadow-primary-dark/0 dark:hover:shadow-red-500/10 px-4 py-[16px] rounded-xl w-[240px] bg-primary-dark/2 dark:bg-primary/2.5 transition-colors duration-300 dark:hover:text-red-100 text-primary-dark/80 dark:text-primary hover:shadow-green-500/10 hover:text-green-800">
               <FaNodeJs size={28} />
               Node.js
@@ -137,7 +140,7 @@ const skills = () => {
 
         {/* Tab-3 */}
         {activeTab === "tab3" && (
-          <div className="grid grid-cols-4 gap-[16px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-[16px]">
             <span className="flex flex-row items-center gap-[14px] text-[16px] font-medium border-2 border-primary-dark/20 hover:border-green-500/80 dark:border-primary/20 dark:hover:border-red-500/80 shadow-xl shadow-primary-dark/0 dark:hover:shadow-red-500/10 px-4 py-[16px] rounded-xl w-[240px] bg-primary-dark/2 dark:bg-primary/2.5 transition-colors duration-300 dark:hover:text-red-100 text-primary-dark/80 dark:text-primary hover:shadow-green-500/10 hover:text-green-800">
               <FaPython size={28} />
               Python
@@ -157,7 +160,7 @@ const skills = () => {
 
         {/* Tab-4 */}
         {activeTab === "tab4" && (
-          <div className="grid grid-cols-4 gap-[16px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-[16px]">
             <span className="flex flex-row items-center gap-[14px] text-[16px] font-medium border-2 border-primary-dark/20 hover:border-green-500/80 dark:border-primary/20 dark:hover:border-red-500/80 shadow-xl shadow-primary-dark/0 dark:hover:shadow-red-500/10 px-4 py-[16px] rounded-xl w-[240px] bg-primary-dark/2 dark:bg-primary/2.5 transition-colors duration-300 dark:hover:text-red-100 text-primary-dark/80 dark:text-primary hover:shadow-green-500/10 hover:text-green-800">
               <FaFigma size={28} />
               Figma
@@ -171,6 +174,11 @@ const skills = () => {
             <span className="flex flex-row items-center gap-[14px] text-[16px] font-medium border-2 border-primary-dark/20 hover:border-green-500/80 dark:border-primary/20 dark:hover:border-red-500/80 shadow-xl shadow-primary-dark/0 dark:hover:shadow-red-500/10 px-4 py-[16px] rounded-xl w-[240px] bg-primary-dark/2 dark:bg-primary/2.5 transition-colors duration-300 dark:hover:text-red-100 text-primary-dark/80 dark:text-primary hover:shadow-green-500/10 hover:text-green-800">
               <SiNetlify size={28} />
               Netlify
+            </span>
+
+            <span className="flex flex-row items-center gap-[14px] text-[16px] font-medium border-2 border-primary-dark/20 hover:border-green-500/80 dark:border-primary/20 dark:hover:border-red-500/80 shadow-xl shadow-primary-dark/0 dark:hover:shadow-red-500/10 px-4 py-[16px] rounded-xl w-[240px] bg-primary-dark/2 dark:bg-primary/2.5 transition-colors duration-300 dark:hover:text-red-100 text-primary-dark/80 dark:text-primary hover:shadow-green-500/10 hover:text-green-800">
+              <SiVercel size={24} />
+              Vercel
             </span>
 
             <span className="flex flex-row items-center gap-[14px] text-[16px] font-medium border-2 border-primary-dark/20 hover:border-green-500/80 dark:border-primary/20 dark:hover:border-red-500/80 shadow-xl shadow-primary-dark/0 dark:hover:shadow-red-500/10 px-4 py-[16px] rounded-xl w-[240px] bg-primary-dark/2 dark:bg-primary/2.5 transition-colors duration-300 dark:hover:text-red-100 text-primary-dark/80 dark:text-primary hover:shadow-green-500/10 hover:text-green-800">
@@ -197,7 +205,7 @@ const skills = () => {
 
         {/* Tab-5 */}
         {activeTab === "tab5" && (
-          <div className="grid grid-cols-4 gap-[16px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-[16px]">
             <span className="flex flex-row items-center gap-[14px] text-[16px] font-medium border-2 border-primary-dark/20 hover:border-green-500/80 dark:border-primary/20 dark:hover:border-red-500/80 shadow-xl shadow-primary-dark/0 dark:hover:shadow-red-500/10 px-4 py-[16px] rounded-xl w-[240px] bg-primary-dark/2 dark:bg-primary/2.5 transition-colors duration-300 dark:hover:text-red-100 text-primary-dark/80 dark:text-primary hover:shadow-green-500/10 hover:text-green-800">
               <FaRobot size={28} />
               AI/ML

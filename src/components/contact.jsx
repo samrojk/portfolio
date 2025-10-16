@@ -20,16 +20,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="text-primary-dark dark:text-primary mx-[42px] justify-items-center mt-[86px]">
+    <div className="text-primary-dark dark:text-primary mx-[24px] md:mx-[42px] justify-items-center mt-[86px]">
       {/* Heading */}
       <div>
-        <h1 className="text-[42px] font-semibold tracking-wide">
+        <h1 className="text-[34px] md:text-[42px] font-semibold tracking-wide">
           Let's Connect
         </h1>
       </div>
 
       {/* Main Form */}
-      <div className="w-[580px] mt-[28px]">
+      <div className="w-[368px] md:w-[580px] mt-[24px] md:mt-[28px]">
         <form onSubmit={handleSubmit} className="flex flex-col gap-[10px]">
           <span className="mb-[-4px]">Name</span>
           <input

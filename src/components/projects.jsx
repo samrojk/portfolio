@@ -43,17 +43,19 @@ const Projects = () => {
   }, [images.length]);
 
   return (
-    <div className="text-primary-dark dark:text-primary mx-[42px] justify-items-center mt-[86px]">
+    <div className="text-primary-dark dark:text-primary mx-[24px] md:mx-[42px] justify-items-center mt-[86px]">
       {/* Heading */}
       <div>
-        <h1 className="text-[42px] font-semibold tracking-wide">Projects</h1>
+        <h1 className="text-[34px] md:text-[42px] font-semibold tracking-wide">
+          Projects
+        </h1>
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-[46px] mt-[28px]">
+      <div className="grid grid-cols-3 md:grid-cols-3 gap-[16px] md:gap-[36px] mt-[24px] md:mt-[28px]">
         <button
           onClick={() => setActiveTab("tab1")}
-          className={`flex py-2 px-4.5 text-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
+          className={`flex py-2 px-4.5 text-center justify-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
             activeTab === "tab1"
               ? "bg-primary-dark text-primary border-primary-dark font-medium dark:text-primary-dark dark:bg-primary dark:border-primary"
               : "text-primary-dark/40 dark:text-primary/40"
@@ -64,7 +66,7 @@ const Projects = () => {
 
         <button
           onClick={() => setActiveTab("tab2")}
-          className={`flex py-2 px-4.5 text-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
+          className={`flex py-2 px-4.5 text-center justify-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
             activeTab === "tab2"
               ? "bg-primary-dark text-primary border-primary-dark font-medium dark:text-primary-dark dark:bg-primary dark:border-primary"
               : "text-primary-dark/40 dark:text-primary/40"
@@ -75,7 +77,7 @@ const Projects = () => {
 
         <button
           onClick={() => setActiveTab("tab3")}
-          className={`flex py-2 px-4.5 text-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
+          className={`flex py-2 px-auto md:px-4.5 text-center justify-center font-medium rounded-xl border-2 border-primary-dark/20 dark:border-primary/20 transition-all duration-200 hover:border-primary-dark/40 hover:dark:border-primary/40 ${
             activeTab === "tab3"
               ? "bg-primary-dark text-primary border-primary-dark font-medium dark:text-primary-dark dark:bg-primary dark:border-primary"
               : "text-primary-dark/40 dark:text-primary/40"
@@ -86,10 +88,10 @@ const Projects = () => {
       </div>
 
       {/* Tab Content */}
-      <div className="mt-[28px] p-4">
+      <div className="mt-[24px] md:mt-[28px] p-4">
         {/* Tab-1 */}
         {activeTab === "tab1" && (
-          <div className="grid grid-cols-3 gap-[16px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[16px]">
             {/* FeProject 1 */}
             <div>
               {/* Carousel */}
@@ -240,12 +242,12 @@ const Projects = () => {
 
         {/* Tab-2 */}
         {activeTab === "tab2" && (
-          <div className="grid grid-cols-3 gap-[16px]"></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[16px]"></div>
         )}
 
         {/* Tab-3 */}
         {activeTab === "tab3" && (
-          <div className="grid grid-cols-3 gap-[16px]"></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[16px]"></div>
         )}
       </div>
     </div>
