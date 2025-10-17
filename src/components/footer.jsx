@@ -33,14 +33,14 @@ import {
 const footer = () => {
   return (
     <footer className="mt-[86px]">
-      <div className="mx-[120px] flex flex-row justify-between items-center text-primary-dark dark:text-white bg-primary dark:bg-primary-dark h-[200px]">
+      <div className="mx-[120px] flex flex-col md:flex-row gap-[24px] md:gap-[18px] justify-between items-center text-primary-dark dark:text-white bg-primary dark:bg-primary-dark h-[200px]">
         {/* Branding Text */}
         <div title="Click on the chrome dino!" className="flex flex-row">
           <span className="flex flex-col gap-[8px]">
-            <h1 className="text-[28px] font-semibold text-primary-dark/80 dark:text-white/80 cursor-default">
+            <h1 className="text-[26px] md:text-[28px] text-center md:text-left font-semibold text-primary-dark/80 dark:text-white/80 cursor-default">
               Samroj Khan
             </h1>
-            <p className="text-[14px] w-[300px] text-primary-dark/40 dark:text-white/40">
+            <p className="text-[12px] md:text-[14px] text-center md:text-left w-[280px] md:w-[300px] text-primary-dark/40 dark:text-white/40">
               Not Just a Developer | A Digital Craftsman Turning Ideas Into
               Experiences.
             </p>
@@ -48,88 +48,88 @@ const footer = () => {
         </div>
 
         {/* Tech Stack */}
-        <div className="flex flex-col gap-[6px]">
+        <div className="flex flex-col gap-[6px] text-center md:text-left">
           <h1 className="text-[18px] font-medium text-primary-dark/80 dark:text-white/80 cursor-default">
             Tech Stack
           </h1>
           <div
             title="Current Tech Stack"
-            className="flex flex-row gap-[16px] px-4 py-2.5 rounded-full bg-primary-dark/1 dark:bg-primary/1 border-2 border-primary-dark/3 dark:border-primary/3 hover:bg-primary-dark/2 hover:dark:bg-primary/3 transition-colors duration-400"
+            className="flex flex-row gap-[18px] md:gap-[16px] px-4 py-2.5 rounded-full bg-primary-dark/1 dark:bg-primary/1 border-2 border-primary-dark/3 dark:border-primary/3 hover:bg-primary-dark/2 hover:dark:bg-primary/3 transition-colors duration-400"
           >
             <SiJavascript
               size={20}
-              className="hover:scale-116 transition-all duration-200 hover:text-yellow-500"
+              className="hover:scale-116 transition-all duration-200 hover:text-yellow-500 size-6 md:size-5"
             />
             <FaReact
               size={20}
-              className="hover:scale-116 transition-all duration-200 hover:text-blue-400"
+              className="hover:scale-116 transition-all duration-200 hover:text-blue-400 size-6 md:size-5"
             />
             <RiTailwindCssFill
               size={20}
-              className="hover:scale-116 transition-all duration-200 hover:text-cyan-400"
+              className="hover:scale-116 transition-all duration-200 hover:text-cyan-400 size-6 md:size-5"
             />
             <SiExpress
               size={20}
-              className="hover:scale-116 transition-all duration-200 hover:text-gray-400"
+              className="hover:scale-116 transition-all duration-200 hover:text-gray-400 size-6 md:size-5"
             />
             <SiMongodb
               size={20}
-              className="hover:scale-116 transition-all duration-200 hover:text-emerald-400"
+              className="hover:scale-116 transition-all duration-200 hover:text-emerald-400 size-6 md:size-5"
             />
             <FaNodeJs
               size={20}
-              className="hover:scale-116 transition-all duration-200 hover:text-green-600"
+              className="hover:scale-116 transition-all duration-200 hover:text-green-600 size-6 md:size-5"
             />
             <FaFigma
               size={20}
-              className="hover:scale-116 transition-all duration-200 hover:text-red-500"
+              className="hover:scale-116 transition-all duration-200 hover:text-red-500 size-6 md:size-5"
             />
           </div>
         </div>
 
         {/* Social Links */}
-        <div className="flex flex-col gap-[6px]">
+        <div className="flex flex-col gap-[6px] text-center md:text-left">
           <h1 className="text-[18px] font-medium text-primary-dark/80 dark:text-white/80 cursor-default">
             Social Link's
           </h1>
           <div
             title="Social Media Links"
-            className="flex flex-row gap-[16px] px-4 py-2.5 rounded-full bg-primary-dark/1 dark:bg-primary/1 border-2 border-primary-dark/3 dark:border-primary/3 hover:bg-primary-dark/2 hover:dark:bg-primary/3 transition-colors duration-400 w-fit"
+            className="flex flex-row gap-[24px] md:gap-[16px] px-4 py-2.5 rounded-full bg-primary-dark/1 dark:bg-primary/1 border-2 border-primary-dark/3 dark:border-primary/3 hover:bg-primary-dark/2 hover:dark:bg-primary/3 transition-colors duration-400 w-fit"
           >
             <a href="https://github.com/samrojk" target="blank_">
               <FaGithub
                 size={20}
-                className="hover:scale-116 transition-all duration-200"
+                className="hover:scale-116 transition-all duration-200 size-7 md:size-5"
               />
             </a>
             <a href="https://www.linkedin.com/in/samrojkhan" target="blank_">
               <FaLinkedin
                 size={20}
-                className="hover:scale-116 transition-all duration-200"
+                className="hover:scale-116 transition-all duration-200 size-7 md:size-5"
               />
             </a>
             <a href="https://www.instagram.com" target="blank_">
               <FaInstagram
                 size={20}
-                className="hover:scale-116 transition-all duration-200"
+                className="hover:scale-116 transition-all duration-200 size-7 md:size-5"
               />
             </a>
             <a href="https://www.x.com" target="blank_">
               <FaSquareXTwitter
                 size={20}
-                className="hover:scale-116 transition-all duration-200"
+                className="hover:scale-116 transition-all duration-200 size-7 md:size-5"
               />
             </a>
           </div>
         </div>
 
         {/* Download Resume */}
-        <div>
+        <div className="flex justify-center mt-[6px] md:mt-[0px]">
           <a
             title="Download my resume!"
             href="/Samroj_Khan_Resume.pdf"
             download
-            className="flex flex-row items-center gap-[10px] text-[16px] font-medium border-2 border-primary-dark/20 hover:border-green-500/80 dark:border-primary/20 dark:hover:border-red-500/80 shadow-xl shadow-primary-dark/0 dark:hover:shadow-red-500/10 px-[16px] py-[10px] rounded-[10px] w-fit bg-primary-dark/2 dark:bg-primary/2.5 transition-colors duration-300 dark:hover:text-red-100 text-primary-dark/80 dark:text-primary hover:shadow-green-500/10 hover:text-green-800 hover:bg-green-800/8 dark:hover:bg-red-100/4 cursor-pointer"
+            className="flex flex-row items-center justify-center gap-[10px] text-[16px] font-medium border-2 border-primary-dark/20 hover:border-green-500/80 dark:border-primary/20 dark:hover:border-red-500/80 shadow-xl shadow-primary-dark/0 dark:hover:shadow-red-500/10 px-[16px] py-[10px] rounded-[10px] w-[180px] md:w-fit bg-primary-dark/2 dark:bg-primary/2.5 transition-colors duration-300 dark:hover:text-red-100 text-primary-dark/80 dark:text-primary hover:shadow-green-500/10 hover:text-green-800 hover:bg-green-800/8 dark:hover:bg-red-100/4 cursor-pointer"
           >
             Download CV
             <FaFileDownload size={18} />
@@ -138,16 +138,16 @@ const footer = () => {
       </div>
 
       {/* Separator Line */}
-      <div className="mx-[120px]">
+      <div className="mx-[26px] md:mx-[120px] mt-[200px] md:mt-[0px]">
         <hr className="text-primary-dark/12 dark:text-primary/12" />
       </div>
 
       {/* Copyright Text */}
-      <div className="mx-[120px] text-[14px] flex flex-row justify-center gap-[4px] text-primary-dark/30 dark:text-white/30 pt-[20px] pb-[40px]">
+      <div className="mx-[26px] md:mx-[120px] text-[12px] md:text-[14px] text-center flex flex-row justify-center gap-[4px] text-primary-dark/30 dark:text-white/30 pt-[20px] pb-[40px]">
         © 2025 Samroj Khan — Ideas Can’t Be Copyrighted, Only Ignited.{" "}
         <FaFire
           size={16}
-          className="mt-[2px] hover:text-green-500 dark:hover:text-red-500 transition-colors duration-500"
+          className="mt-[2px] hidden md:block size-3 md:size-4 hover:text-green-500 dark:hover:text-red-500 transition-colors duration-500"
         />
       </div>
     </footer>

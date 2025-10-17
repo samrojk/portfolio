@@ -29,7 +29,7 @@ const Contact = () => {
       </div>
 
       {/* Main Form */}
-      <div className="w-[368px] md:w-[580px] mt-[24px] md:mt-[28px]">
+      <div className="w-[340px] md:w-[580px] mt-[24px] md:mt-[28px]">
         <form onSubmit={handleSubmit} className="flex flex-col gap-[10px]">
           <span className="mb-[-4px]">Name</span>
           <input
