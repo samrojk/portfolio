@@ -91,7 +91,7 @@ const Projects = () => {
       <div className="mt-[24px] md:mt-[28px] p-4">
         {/* Tab-1 */}
         {activeTab === "tab1" && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[16px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-[16px]">
             {/* FeProject 1 */}
             <div>
               {/* Carousel */}
@@ -242,12 +242,12 @@ const Projects = () => {
 
         {/* Tab-2 */}
         {activeTab === "tab2" && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[16px]"></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-[16px]"></div>
         )}
 
         {/* Tab-3 */}
         {activeTab === "tab3" && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[16px]"></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-[16px]"></div>
         )}
       </div>
     </div>

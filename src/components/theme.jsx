@@ -20,14 +20,15 @@ const theme = () => {
   }, [darkMode]);
 
   return (
-    <button title="Mode Switch"
-    className="cursor-pointer"
+    <button
+      title="Mode Switch"
+      className="cursor-pointer"
       onClick={() => setDarkMode((prev) => !prev)}
     >
       <img
         src={darkMode ? LogoW : LogoD}
         alt="Theme Toggle"
-        className="h-[52px]"
+        className="h-[48px] md:h-[52px]"
       />
     </button>
   );

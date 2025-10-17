@@ -4,11 +4,11 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 const hero = () => {
   return (
-    <div className="text-primary-dark dark:text-primary mx-[24px] md:mx-[42px] justify-items-center mt-[62px] md:mt-[72px]">
+    <div className="text-primary-dark dark:text-primary mx-[24px] md:mx-[42px] justify-items-center mt-[32px] md:mt-[72px]">
       {/* Hero Text */}
       <div className="flex flex-col-reverse items-center gap-[26px] md:gap-[86px] md:flex-row">
         <span className="flex flex-col gap-3 md:gap-4 text-center md:text-left">
-          <h1 className="flex flex-row items-center justify-center md:justify-normal gap-4 md:gap-6 text-[38px] md:text-[54px] font-semibold tracking-wide">
+          <h1 className="flex flex-row items-center justify-center md:justify-normal gap-[14px] md:gap-6 text-[36px] md:text-[54px] font-semibold tracking-wide">
             Samroj Khan{" "}
             <FaCircleCheck
               size={18}
